@@ -1,6 +1,10 @@
 from api.Kiwoom import *
 import sys
+
 app = QApplication(sys.argv)
 kiwoom = Kiwoom()
-kiwoom.get_account_number()
+
+df = kiwoom.get_price_data("005930")
+print(df)
+
 app.exec_()
