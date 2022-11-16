@@ -209,7 +209,7 @@ class Kiwoom(QAxWidget):
             self.tr_data = self.balance
 
         self.tr_event_loop.exit()
-        time.sleep(0.5)
+        time.sleep(0.7)
 
     def get_deposit(self):
         self.dynamicCall("SetInputValue(QString, QString)", "계좌번호", self.account_number)
